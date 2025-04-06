@@ -3,7 +3,7 @@
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="Hotels.xsd">
 
-  <!-- 1st hotel: unchanged -->
+  <!-- 1) correct -->
   <Hotel Rating="4.2">
     <Name>Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
@@ -17,7 +17,7 @@
     </Address>
   </Hotel>
 
-  <!-- (2) missing required Rating attribute -->
+  <!-- 2) missing required Rating -->
   <Hotel>
     <Name>Marriott Phoenix Tempe at The Buttes</Name>
     <Phone>480-929-1000</Phone>
@@ -30,7 +30,7 @@
     </Address>
   </Hotel>
 
-  <!-- (3) Phone element entirely missing -->
+  <!-- 3) Phone element missing -->
   <Hotel Rating="4.3">
     <Name>Embassy Suites by Hilton Phoenix Tempe</Name>
     <!-- <Phone> removed -->
@@ -43,7 +43,7 @@
     </Address>
   </Hotel>
 
-  <!-- (4) Address has no closing tag -->
+  <!-- 4) Address has no closing tag -->
   <Hotel Rating="4.0">
     <Name>Hilton Garden Inn Tempe/Phoenix Airport</Name>
     <Phone>480-894-1100</Phone>
@@ -56,7 +56,7 @@
     <!-- MISSING </Address> here -->
   </Hotel>
 
-  <!-- (5) Two Name elements -->
+  <!-- 5) Two Name elements -->
   <Hotel Rating="4.1">
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Name>Courtyard Downtown</Name>
@@ -70,7 +70,7 @@
     </Address>
   </Hotel>
 
-  <!-- The rest unchanged -->
+  <!-- the rest unchanged -->
   <Hotel Rating="4.2">
     <Name>Hyatt Place Phoenix/Tempe</Name>
     <Phone>480-966-6500</Phone>
@@ -82,6 +82,7 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.4">
     <Name>Residence Inn Phoenix Tempe/Downtown</Name>
     <Phone>480-967-1400</Phone>
@@ -93,6 +94,7 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.3">
     <Name>SpringHill Suites Phoenix Tempe</Name>
     <Phone>480-894-2200</Phone>
@@ -104,6 +106,7 @@
       <Zip>85284</Zip>
     </Address>
   </Hotel>
+
   <Hotel Rating="4.1">
     <Name>Hampton Inn &amp; Suites Phoenix Tempe</Name>
     <Phone>480-967-1000</Phone>
@@ -115,17 +118,7 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  <Hotel Rating="3.9">
-    <Name>La Quinta Inn &amp; Suites Phoenix Sky Harbor</Name>
-    <Phone>602-273-6353</Phone>
-    <Address>
-      <Number>1001</Number>
-      <Street>South 48th Street</Street>
-      <City>Phoenix</City>
-      <State>AZ</State>
-      <Zip>85034</Zip>
-    </Address>
-  </Hotel>
+
   <Hotel Rating="4.0">
     <Name>DoubleTree by Hilton Phoenix Tempe</Name>
     <Phone>480-967-7888</Phone>
