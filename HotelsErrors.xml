@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hotel> <!-- ❌ Error 1: Root element should be <Hotels> -->
+
+  <Hotel> <!-- Hotel 1 -->
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel> <!-- Hotel 2 -->
+    <Name>Hilton Garden Inn</Name>
+    <Address>
+      <Number>25</Number>
+      <Street>N Central Ave</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+      <NearestAirport>Phoenix Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+  <!-- ❌ Error 2: Missing <Phone> element for this hotel -->
+
+  <Hotel> <!-- Hotel 3 -->
+    <!-- ❌ Error 3: Missing required attribute (assume 'Rating' is required for this one) -->
+    <Name>Holiday Inn Express</Name>
+    <Phone>480-555-1234</Phone>
+    <Phone>800-555-6789</Phone>
+    <Address>
+      <Number>144</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <!-- ❌ Error 4: No closing tag for <NearestAirport> -->
+      <NearestAirport>Sky Harbor
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.5"> <!-- Hotel 4 -->
+    <!-- ❌ Error 5: Duplicate <Name> elements -->
+    <Name>Duplicate Hotel</Name>
+    <Name>Extra Hotel Name</Name>
+    <Phone>480-222-3333</Phone>
+    <Address>
+      <Number>123</Number>
+      <Street>Some St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+</Hotel>
