@@ -5,7 +5,6 @@
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
-        <!-- One or more Hotel entries -->
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
@@ -20,12 +19,11 @@
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
-                  <!-- optional attribute -->
+                  <!-- optional attribute, spelled NearstAirport per the spec diagram :contentReference[oaicite:2]{index=2} -->
                   <xs:attribute name="NearstAirport" type="xs:string" use="optional"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <!-- required attribute -->
             <xs:attribute name="Rating" type="xs:decimal" use="required"/>
           </xs:complexType>
         </xs:element>
