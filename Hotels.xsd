@@ -19,12 +19,11 @@
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
-                  <!-- matches JSON key "_NearestAirport" -->
-                  <xs:attribute name="NearstAirport" type="xs:string" use="optional"/>
+                  <!-- now required -->
+                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <!-- matches JSON key "_Rating" -->
             <xs:attribute name="Rating" type="xs:decimal" use="required"/>
           </xs:complexType>
         </xs:element>
