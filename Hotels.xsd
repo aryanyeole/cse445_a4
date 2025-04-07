@@ -1,29 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Hotels.xsd
+  CSE445 Assignment 4: XML Schema for Hotels Directory
+  Defines structure and constraints for Hotels.xml instances.
+-->
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-  <!-- Root element -->
+  <!-- Root element <Hotels> contains one or more <Hotel> entries -->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
+        <!-- <Hotel> can appear multiple times (maxOccurs="unbounded") -->
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <!-- Hotel name as a simple string element -->
               <xs:element name="Name" type="xs:string"/>
+
+              <!-- One or more phone numbers allowed -->
               <xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
+
+              <!-- Address element grouping street, city, state, etc. -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
+                    <!-- Street number as string (allows alphanumeric) -->
                     <xs:element name="Number" type="xs:string"/>
+                    <!-- Street name -->
                     <xs:element name="Street" type="xs:string"/>
+                    <!-- City name -->
                     <xs:element name="City" type="xs:string"/>
+                    <!-- State code (e.g., AZ) -->
                     <xs:element name="State" type="xs:string"/>
+                    <!-- ZIP/postal code -->
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
-                  <!-- now required -->
+                  <!-- Required attribute for nearest airport name -->
                   <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
+            <!-- Optional attribute for hotel rating (decimal) -->
             <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
           </xs:complexType>
         </xs:element>
