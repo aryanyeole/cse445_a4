@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- (1) root element renamed from Hotels to Hotel -->
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:noNamespaceSchemaLocation="Hotels.xsd">
+<Hotel
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd"
+    xsi:schemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd">
 
   <!-- 1) correct -->
   <Hotel Rating="4.2">
