@@ -2,6 +2,15 @@
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd">
 
+<!--
+  Hotels.xml
+  CSE445 Assignment 4: Directory of Hotels
+  - Root element <Hotels> contains multiple <Hotel> entries.
+  - Each <Hotel> has a (optional) Rating attribute, one or more <Phone> elements,
+    and exactly one <Address> with the required NearestAirport attribute.
+-->
+
+<!--Hotel 1-->
   <Hotel Rating="4.2">
     <Name>Westin Tempe</Name>
     <Phone>480-968-8885</Phone>
@@ -15,6 +24,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 2-->
   <Hotel Rating="4.5">
     <Name>Marriott Phoenix Tempe at The Buttes</Name>
     <Phone>480-929-1000</Phone>
@@ -27,6 +37,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 3-->
   <Hotel Rating="4.3">
     <Name>Embassy Suites by Hilton Phoenix Tempe</Name>
     <Phone>480-449-6900</Phone>
@@ -39,6 +50,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 4-->
   <Hotel Rating="4.0">
     <Name>Hilton Garden Inn Tempe/Phoenix Airport</Name>
     <Phone>480-894-1100</Phone>
@@ -51,6 +63,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 5-->
   <Hotel Rating="4.1">
     <Name>Courtyard by Marriott Tempe Downtown</Name>
     <Phone>480-967-5900</Phone>
@@ -63,6 +76,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 6-->
   <Hotel Rating="4.2">
     <Name>Hyatt Place Phoenix/Tempe</Name>
     <Phone>480-966-6500</Phone>
@@ -75,6 +89,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 7-->
   <Hotel Rating="4.4">
     <Name>Residence Inn Phoenix Tempe/Downtown</Name>
     <Phone>480-967-1400</Phone>
@@ -87,6 +102,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 8-->
   <Hotel Rating="4.3">
     <Name>SpringHill Suites Phoenix Tempe</Name>
     <Phone>480-894-2200</Phone>
@@ -99,6 +115,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 9-->
   <Hotel Rating="4.1">
     <Name>Hampton Inn &amp; Suites Phoenix Tempe</Name>
     <Phone>480-967-1000</Phone>
@@ -111,6 +128,7 @@
     </Address>
   </Hotel>
 
+<!--Hotel 10-->
   <Hotel Rating="4.0">
     <Name>DoubleTree by Hilton Phoenix Tempe</Name>
     <Phone>480-967-7888</Phone>
