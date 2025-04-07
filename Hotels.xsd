@@ -19,12 +19,13 @@
                     <xs:element name="State" type="xs:string"/>
                     <xs:element name="Zip" type="xs:string"/>
                   </xs:sequence>
-                  <!-- optional attribute, spelled NearstAirport per the spec diagram :contentReference[oaicite:2]{index=2} -->
-                  <xs:attribute name="NearstAirport" type="xs:string" use="required"/>
+                  <!-- matches JSON key "_NearestAirport" -->
+                  <xs:attribute name="NearstAirport" type="xs:string" use="optional"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="Rating" type="xs:decimal" use="optional"/>
+            <!-- matches JSON key "_Rating" -->
+            <xs:attribute name="Rating" type="xs:decimal" use="required"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
