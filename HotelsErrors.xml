@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- (1) root element renamed from Hotels to Hotel -->
+<!--
+  HotelsErrors.xml
+  CSE445 Assignment 4 – Faulty XML for testing error detection.
+  Contains five injected errors:
+    1) Root element renamed from <Hotels> to <Hotel>
+    2) Missing required Rating attribute on one <Hotel>
+    3) Missing <Phone> element on one <Hotel>
+    4) An <Address> element without a closing tag
+    5) Two <Name> elements on one <Hotel>
+-->
 <Hotel
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd"
@@ -72,7 +81,7 @@
     </Address>
   </Hotel>
 
-  <!-- the rest unchanged -->
+  <!-- Remaining entries are unchanged (valid) -->
   <Hotel Rating="4.2">
     <Name>Hyatt Place Phoenix/Tempe</Name>
     <Phone>480-966-6500</Phone>
