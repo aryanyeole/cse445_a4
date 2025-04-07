@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+<Hotels
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd"
+    xsi:schemaLocation="https://aryanyeole.github.io/cse445_a4/Hotels.xsd">
 
   <!-- Sample from Figure 1 -->
   <Hotel Rating="4.2">
@@ -16,7 +18,7 @@
     </Address>
   </Hotel>
 
-  <!-- 9 real hotels -->
+  <!-- 9 real hotels (total = 10) -->
   <Hotel Rating="4.5">
     <Name>Marriott Phoenix Tempe at The Buttes</Name>
     <Phone>480-929-1000</Phone>
